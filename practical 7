@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> Tribute to Mother Teresa </title>
+</head>
+<body>
+
+<div>
+<nav>
+ <a href="#life">Life</a>
+ <a href="#works">Works</a>
+ <a href="#legacy">Legacy</a>
+</nav>
+</div>
+
+<div>
+<header>
+ <h1> Mother Teresa </h1>
+ <p>The Saint of the Gutters</p>
+</header>
+</div>
+
+<div id="life">
+<h2>Life</h2>
+
+<img src="mother_teresa.jpg">
+<p> Mother Teresa was a Roman Catholic nun who devoted her life to serving the poor and destitute, primarily in Calcutta, India.</p>
+</div>
+
+<div id="works">
+<h2>Works</h2>
+<p><b>Missionaries of Charity</b> - She founded this congregation to care for "the poorest of the poor" and those whom nobody else would look after.</p>
+<p><b>Humanitarian Aid</b> - She established numerous clinics, orphanages, and hospices for people with leprosy, tuberculosis, and HIV/AIDS.</p>
+<p><b>Global Advocacy</b> - She worked tirelessly to promote peace and human rights, receiving the Nobel Peace Prize in 1979 for her humanitarian efforts.</p>
+</div>
+
+<div id="legacy">
+<h2>Legacy</h2>
+<p>Mother Teresa's legacy is defined by her unconditional compassion and selflessness, inspiring millions to help those in need. She was canonized as a saint in 2016.</p>
+</div>
+
+
+
+</body>
+</html>
