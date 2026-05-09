@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mini Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <!-- Navbar with Dropdown -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MiniPortal</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" data-bs-toggle="dropdown">
+                    Menu
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-2 bg-white border rounded">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Applications</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Registration</li>
+            </ol>
+        </nav>
+
+        <!-- Responsive Layout (Grid System) -->
+        <div class="row g-4 mt-2">
+            <!-- Sidebar/Info Column (Visible on Tablet/Desktop) -->
+            <div class="col-lg-4 col-md-5">
+                <div class="card p-3 shadow-sm border-0">
+                    <h5 class="text-primary">Important Note</h5>
+                    <p class="small text-muted">Please fill in all details accurately. All fields marked with (*) are mandatory for processing your application.</p>
+                </div>
+            </div>
+
+            <!-- Main Form Column -->
+            <div class="col-lg-8 col-md-7">
+                <div class="card p-4 shadow-sm border-0">
+                    <h3>Register Now</h3>
+                    <hr>
+                    <!-- Form -->
+                    <form onsubmit="return false;">
+                        <div class="mb-3">
+                            <label class="form-label">Full Name*</label>
+                            <input type="text" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address*</label>
+                            <input type="email" class="form-control" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="terms">
+                            <label class="form-check-label" for="terms">I agree to terms</label>
+                        </div>
+                        <!-- Button triggering Modal -->
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                            Submit Details
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirm Submission</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to save these details? You cannot undo this action.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success" onclick="alert('Success!')" data-bs-dismiss="modal">Yes, Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Required for Dropdown, Modal, and Mobile Nav) -->
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
